@@ -6,7 +6,6 @@ import { ArrowRight, Database, Workflow, LayoutPanelLeft, Sparkles } from "lucid
 import { capabilities, capabilitiesSection, type CapabilityIcon } from "@/content/capabilities";
 import CapabilityModal from "@/components/ui/CapabilityModal";
 import WordReveal from "@/components/motion/WordReveal";
-import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 
 const ICONS: Record<CapabilityIcon, typeof Database> = {
   database: Database,

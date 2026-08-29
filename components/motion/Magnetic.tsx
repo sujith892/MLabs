@@ -1,8 +1,11 @@
 "use client";
 
+import type { ReactNode } from "react";
 
-export default function Magnetic() {
-  return null;
+interface MagneticProps {
+  children: ReactNode;
 }
 
-
+export default function Magnetic({ children }: MagneticProps) {
+  return <>{children}</>;
+}

@@ -42,5 +42,6 @@ export default function Magnetic({ children, strength = 0.16 }: MagneticProps) {
     };
   }, [strength]);
 
-  return React.cloneElement(children, { ref } as any);
+  //return React.cloneElement(children, { ref } as any);
+  return null;
 }

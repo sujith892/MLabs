@@ -1,0 +1,20 @@
+export const differentiatorsSection = {
+  eyebrow: "Why Mfieldlabs",
+  title: "Why MField Labs Exists",
+  introduction: "Growing businesses face many of the same challenges as large enterprises. You need reliable data. You need less manual work. You need AI that actually helps instead of just sounding good in a meeting. You need systems that talk to each other.",
+  challenge: "But the traditional consulting model was built around large enterprise budgets and large enterprise timelines, not yours. So most growing businesses either go without, or cobble together freelancers and hope it works.",
+  approach: "MField Labs was built differently. The intelligence your business needs, in your data, your people, your systems, your institutional knowledge, is probably already there. Our job is to connect it into something coherent, using senior judgment and an efficient delivery model, so you get enterprise-caliber thinking without enterprise-level cost or commitment.",
+  image: "/logo/Efficient Delivery.png",
+  traditionalModel: ["Large teams", "High overhead", "Long, broad engagements", "Transformation programs that touch everything"],
+  mfieldModel: ["Focused team, senior-led", "Efficient global delivery", "Start with a sprint, prove value fast", "Solve the highest-value problem first."],
+  familiarStatements: [
+    "Our data is everywhere, and nobody fully trusts the numbers.",
+    "Our finance team spends days assembling reports by hand.",
+    "Our people spend hundreds of hours a month on work that should be automated.",
+    "Our systems don't talk to each other.",
+    "Everyone's talking about AI, but we don't know where it would actually make or save us money.",
+    "We've grown fast, and our technology hasn't kept up.",
+    "We know we need to modernize, but a massive consulting engagement doesn't make sense for us.",
+  ],
+  quotes: ["Our data is everywhere, and nobody fully trusts the numbers.", "Our finance team spends days assembling reports by hand.", "Our people spend hundreds of hours a month on work that should be automated.", "Our systems don't talk to each other.", "Everyone's talking about AI, but we don't know where it would actually make or save us money.", "We've grown fast, and our technology hasn't kept up.", "We know we need to modernize, but a massive consulting engagement doesn't make sense for us."],
+};

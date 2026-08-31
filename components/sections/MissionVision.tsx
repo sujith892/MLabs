@@ -16,7 +16,7 @@ export default function MissionVision() {
     () => {
       const mm = gsap.matchMedia();
       mm.add("(prefers-reduced-motion: no-preference)", () => {
-        [missionRef.current, visionRef.current].forEach((node, i) => {
+        [missionRef.current, visionRef.current].forEach((node) => {
           if (!node) return;
           gsap.set(node, { "--fill": 0 } as gsap.TweenVars);
           ScrollTrigger.create({

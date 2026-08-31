@@ -1,5 +1,3 @@
-import WordReveal from "@/components/motion/WordReveal";
-
 const caseStudies = [
   {
     industry: "Professional services",

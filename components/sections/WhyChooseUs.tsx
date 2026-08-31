@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
               A DIFFERENT MODEL, BY DESIGN
             </div>
             <p className="text-base text-gray-600 mb-4">
-              We're not a smaller version of a big consulting firm, and we're not a cheaper alternative to one either.
+              We&apos;re not a smaller version of a big consulting firm, and we&apos;re not a cheaper alternative to one either.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -123,7 +123,7 @@ export default function WhyChooseUs() {
                 ))}
               </div>
               <div className="text-xs font-semibold text-gray-900 mt-10.5">
-                <i>If any of this sounds familiar, you're not alone - and it's fixable.,</i>
+                <i>If any of this sounds familiar, you&apos;re not alone - and it&apos;s fixable.,</i>
               </div>
             </div>
           )}
@@ -137,16 +137,16 @@ export default function WhyChooseUs() {
               <div className="space-y-2.5 text-base text-gray-600 leading-relaxed"><br></br>
                 <p>
                   You can already hire an AI developer, a Power BI analyst, or an automation specialist online. Good talent 
-                  isn't hard to find anymore.
+                  isn&apos;t hard to find anymore.
                 </p>
                 <p>
-                  What's harder to find is judgment: knowing which problem to solve first, how the pieces fit together, and 
-                  who's accountable when they don't. Hire five independent specialists and you become the project manager, the 
-                  quality reviewer, and the person who owns the outcome if something doesn't work.
+                  What&apos;s harder to find is judgment: knowing which problem to solve first, how the pieces fit together, and 
+                  who&apos;s accountable when they don&apos;t. Hire five independent specialists and you become the project manager, the 
+                  quality reviewer, and the person who owns the outcome if something doesn&apos;t work.
                 </p>
                 <div className="border-l-4 border-blue-600 bg-blue-50 px-3.5 py-3 text-base text-gray-900">
                   <strong>MField Labs is one accountable team.</strong> We diagnose the problem, decide what to tackle first, 
-                  bring together the right expertise, make sure the pieces fit together, and stand behind the result. You don't 
+                  bring together the right expertise, make sure the pieces fit together, and stand behind the result. You don&apos;t 
                   have to assemble and manage the team. We do that.
                 </div>
               </div>

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Database, Workflow, LayoutPanelLeft, Sparkles } from "lucide-react";
 import { capabilities, capabilitiesSection, type CapabilityIcon } from "@/content/capabilities";
 import CapabilityModal from "@/components/ui/CapabilityModal";
-import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 
 const ICONS: Record<CapabilityIcon, typeof Database> = {
   database: Database,

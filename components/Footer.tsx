@@ -26,7 +26,7 @@ export default function Footer() {
         <div>
           <div className="relative mb-4 h-20 w-96 max-w-full">
             <Image
-              src="/logo/mfield-logo-white-text.png"
+              src="/logo/field-logo-png.png"
               alt="Mfieldlabs"
               fill
               sizes="10rem"

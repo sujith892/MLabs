@@ -48,7 +48,7 @@ export default function About() {
             </div>
             <div className="absolute bottom-0 left-6 h-16 w-56 rounded-xl bg-white px-4 py-2 shadow-[0_10px_30px_rgba(17,24,39,0.14)] md:left-8 md:h-20 md:w-64 md:px-5 md:py-3">
               <Image
-                src="/logo/mfield-logo-dark-text.png"
+                src="/logo/Logo+field-png.png"
                 alt="Mfieldlabs"
                 fill
                 sizes="16rem"

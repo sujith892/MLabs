@@ -4,35 +4,40 @@ export interface EngagementModel {
 }
 
 export const engagementModelsSection = {
-  eyebrow: "Engagement Models",
-  title: "How We Work Together",
+  eyebrow: "Who we are",
+  title: "A smarter delivery model, not a cheaper one",
   description:
-    "Every engagement can be structured to fit how a business wants to work: Fixed Fee, Time & Materials, Managed Services, Dedicated Teams, or Outcome-Based.",
+    "MField Labs runs on an integrated global delivery model. Senior strategy and client leadership are based in the US. Delivery is powered by an experienced team with a global footprint. This isn't outsourcing to cut corners, it's a more efficient way to deliver senior-level work. You get sophisticated capability without paying for the overhead structure of a traditional large firm. The economics are a result of a smarter model, not of the work being worth less.",
 };
+
+export const companyExperience = {
+  title: "The company is new. The experience behind it isn't.",
+  body: "MField Labs is a new company, founded in 2026. The people behind it aren't new to this work. [X] years of combined experience in consulting and technology, including [Big Four firm / other named firms, only if you're comfortable naming them], across [industries served]. [Add anything else true and substantiated: certifications, scale of programs, geographies served.]",
+};
+
+export const reasonsToChoose = [
+  "We build things your team can run without us. You won't be stuck depending on us forever.",
+  "We give you one clear picture of your business, instead of scattered reports that don't agree with each other.",
+  "We connect your data, your people, and your day-to-day work so things flow instead of getting stuck.",
+  "We use AI to save your team time, not to replace your team's judgment.",
+  "We build things that can grow and change with your business, not a fix that breaks the moment something changes.",
+];
 
 export const engagementModels: EngagementModel[] = [
   {
     title: "Velocity Sprint",
-    body: "Rapid, outcome-focused engagements that deliver measurable value within weeks. Ideal for leaders who need executive visibility, automation quick wins, or an AI proof-of-concept. Typical outcomes: validated ROI and a clear roadmap to scale.",
+    body: "A short, focused project that shows results in four to six weeks. The recommended first step if you haven't worked with us yet.",
   },
   {
     title: "Transformation Partnership",
-    body: "Multi-phase engagements focused on modernizing operations across the business. Built for businesses ready to rethink how data, operations, and technology work together. Typical outcomes: modernized operations and capability that lasts beyond the engagement.",
+    body: "A longer engagement for bigger changes across your business.",
   },
   {
     title: "Innovation Studio",
-    body: "An ongoing partnership to explore, prototype, and scale new ideas into working solutions. Suited to organizations that want a steady, ongoing space for testing new ideas. Typical outcomes: a pipeline of validated, ready-to-use solutions.",
+    body: "An ongoing partnership to test and build new ideas together.",
   },
   {
     title: "Managed Intelligence",
-    body: "A subscription model providing ongoing support, optimization, and governance for systems already in place. Designed for organizations that want their platforms to keep improving after launch. Typical outcomes: sustained performance, governed AI, and predictable costs.",
+    body: "Ongoing support after the initial work is done, so your systems keep running and improving.",
   },
-];
-
-export const deliveryModels: string[] = [
-  "Fixed Fee",
-  "Time & Materials",
-  "Managed Services",
-  "Dedicated Teams",
-  "Outcome-Based",
 ];

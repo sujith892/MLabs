@@ -124,8 +124,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6, delay: 1.35 }}
-          className="mt-10 flex flex-wrap gap-4"
-        >
+          className="mt-10 flex flex-wrap gap-4">
+        
           <Button
             asChild
             size="lg"
@@ -152,7 +152,7 @@ export default function Hero() {
         <div className="w-full">
           <div className="relative mb-5 h-32 w-full">
             <Image
-              src="/logo/mfield-logo-dark-text.png"
+              src="/logo/Logo+field-png.png"
               alt="Mfieldlabs"
               fill
               className="object-contain"

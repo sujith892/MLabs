@@ -13,7 +13,10 @@ export interface Capability {
 }
 
 export const capabilitiesSection = {
-  eyebrow: "Four areas we help with",
+  eyebrow: "OUR CAPABILITIES",
+  heading: "Enterprise Transformation Capabilities",
+  description:
+    "Four integrated capability areas designed to work as one ecosystem — connecting data, people, and technology so intelligent decision-making becomes part of everyday business.",
 };
 
 export const capabilities: Capability[] = [

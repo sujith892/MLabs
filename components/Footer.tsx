@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mt-8 border-t border-white/10 pt-4 text-xs text-white">
-        © {new Date().getFullYear()} Mfieldlabs. All rights reserved.
+        © {new Date().getFullYear()} MField Labs, LLC. All rights reserved.
       </div>
 
       {active && ActiveIcon ? (

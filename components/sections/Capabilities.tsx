@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Database, Workflow, LayoutPanelLeft, Sparkles } from "lucide-react";
 import { capabilities, capabilitiesSection, type CapabilityIcon } from "@/content/capabilities";
 import CapabilityModal from "@/components/ui/CapabilityModal";
-import { gsap, useGSAP } from "@/lib/gsap";
 
 const ICONS: Record<CapabilityIcon, typeof Database> = {
   database: Database,
@@ -19,49 +18,20 @@ export default function Capabilities() {
   const active = openIndex !== null ? capabilities[openIndex] : null;
   const ActiveIcon = active ? ICONS[active.icon] : null;
 
-  const sectionRef = React.useRef<HTMLElement>(null);
-
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
-      mm.add("(min-width: 1280px) and (prefers-reduced-motion: no-preference)", () => {
-        const cards = gsap.utils.toArray<HTMLElement>(".capability-card");
-        if (!cards.length) return;
-
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top top",
-            end: "+=130%",
-            scrub: 0.6,
-            pin: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        });
-
-        cards.forEach((card, i) => {
-          tl.to(card, { x: 0, opacity: 1, ease: "power2.out", duration: 0.6 }, i * 0.32);
-        });
-
-        return () => {
-          gsap.set(cards, { clearProps: "transform,opacity" });
-        };
-      });
-      return () => mm.revert();
-    },
-    { scope: sectionRef }
-  );
-
   return (
     <section
       id="services"
-      ref={sectionRef}
-      className="scroll-mt-28 overflow-hidden bg-white px-6 py-20 md:px-16 xl:py-8"
+      className="scroll-mt-28 overflow-hidden bg-white px-6 py-20 pb-28 md:px-16 xl:py-8 xl:pb-16"
     >
       <div className="container">
         <div className="mb-10 max-w-2xl xl:mb-6">
           <p className="eyebrow mb-5">{capabilitiesSection.eyebrow}</p>
+          <h2 className="max-w-4xl whitespace-nowrap font-display text-4xl font-bold leading-[1.05] text-ink md:text-5xl">
+            {capabilitiesSection.heading}
+          </h2>
+          <p className="mt-5 max-w-4xl text-base leading-relaxed text-ink/65 md:text-lg">
+            {capabilitiesSection.description}
+          </p>
         </div>
       </div>
 
@@ -111,52 +81,6 @@ export default function Capabilities() {
             </div>
           );
         })}
-      </div>
-
-      <div className="container mt-4 grid gap-10 border-t border-ink/10 pt-10 xl:mt-3 xl:grid-cols-[0.8fr_1.2fr] xl:gap-16 xl:pt-12">
-        <div className="relative -top-8 max-w-xl border-l-2 border-sky pl-5">
-          <p className="eyebrow mb-4 text-deepblue">The Opportunity</p>
-          <h3 className="font-display text-2xl font-bold leading-tight text-ink">What would it mean if...</h3>
-          <ul className="mt-5 space-y-3 text-sm leading-relaxed text-ink/75">
-            <li className="flex gap-3"><span className="font-display font-bold text-sky">01</span><span>Reporting went from days to real time?</span></li>
-            <li className="flex gap-3"><span className="font-display font-bold text-sky">02</span><span>Hundreds of hours of manual work a month simply went away?</span></li>
-            <li className="flex gap-3"><span className="font-display font-bold text-sky">03</span><span>A six-week project uncovered real, ongoing savings?</span></li>
-            <li className="flex gap-3"><span className="font-display font-bold text-sky">04</span><span>You could add capability without adding headcount?</span></li>
-          </ul>
-          <p className="mt-4 border-t border-ink/10 pt-4 text-sm leading-relaxed text-ink/70">
-            That&apos;s the conversation worth having before &quot;what does this cost.&quot; The real question is what the
-            problem is already costing you.
-          </p>
-        </div>
-
-        <div className="relative -top-8 border-l-2 border-deepblue pl-5 xl:justify-self-end">
-          <p className="eyebrow mb-4 text-deepblue">A Practical First Step</p>
-          <h3 className="font-display text-2xl font-bold leading-tight text-ink">
-            Start small. Prove value. Scale what works.
-          </h3>
-          <p className="mt-3 text-sm leading-relaxed text-ink/70">
-            Committing to a big engagement with a new firm is a real leap. So don&apos;t. Start with a Velocity Sprint,
-            a tightly scoped project that solves one important problem in four to six weeks and shows results before
-            you commit to anything larger.
-          </p>
-          <ul className="mt-4 space-y-3 text-sm leading-relaxed text-ink/75">
-            <li className="border-l border-sky pl-4">
-              <strong className="font-semibold text-ink">Executive Intelligence Sprint</strong> - Give leadership
-              reliable, real-time visibility into the business.
-            </li>
-            <li className="border-l border-sky pl-4">
-              <strong className="font-semibold text-ink">Automation Sprint</strong> - Find and automate the most
-              expensive repetitive process in your operation.
-            </li>
-            <li className="border-l border-sky pl-4">
-              <strong className="font-semibold text-ink">AI Opportunity Sprint</strong> - Identify the highest-value
-              practical use of AI in your business, and implement one.
-            </li>
-          </ul>
-          <p className="mt-4 border-t border-ink/10 pt-4 text-sm leading-relaxed text-ink/70">
-            Each one produces something real. You see the value before you decide what comes next.
-          </p>
-        </div>
       </div>
 
       {active && ActiveIcon ? (

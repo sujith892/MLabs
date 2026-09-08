@@ -4,10 +4,10 @@ export interface EngagementModel {
 }
 
 export const engagementModelsSection = {
-  eyebrow: "Who we are",
-  title: "A smarter delivery model, not a cheaper one",
+  eyebrow: "Engagement Models",
+  title: "Built Around Your Outcomes.",
   description:
-    "MField Labs runs on an integrated global delivery model. Senior strategy and client leadership are based in the US. Delivery is powered by an experienced team with a global footprint. This isn't outsourcing to cut corners, it's a more efficient way to deliver senior-level work. You get sophisticated capability without paying for the overhead structure of a traditional large firm. The economics are a result of a smarter model, not of the work being worth less.",
+    "Choose the model that fits your ambition. Every engagement is commercially flexible — Fixed Fee, Time & Materials, Managed Services, Dedicated Teams, or Outcome-Based.",
 };
 
 export const companyExperience = {
@@ -26,18 +26,24 @@ export const reasonsToChoose = [
 export const engagementModels: EngagementModel[] = [
   {
     title: "Velocity Sprint",
-    body: "A short, focused project that shows results in four to six weeks. The recommended first step if you haven't worked with us yet.",
+    body: "Rapid, outcome-focused engagements that deliver measurable value within weeks. Ideal for leaders who need executive visibility, automation quick wins, or an AI proof-of-concept.",
   },
   {
     title: "Transformation Partnership",
-    body: "A longer engagement for bigger changes across your business.",
+    body: "Strategic, multi-phase initiatives focused on organization-wide modernization. Built for enterprises ready to rethink how data, operations, and technology work together.",
   },
   {
     title: "Innovation Studio",
-    body: "An ongoing partnership to test and build new ideas together.",
+    body: "An ongoing partnership to explore, prototype, validate, and scale new ideas into business solutions. Suited to organizations that treat innovation as a continuous discipline.",
   },
   {
     title: "Managed Intelligence",
-    body: "Ongoing support after the initial work is done, so your systems keep running and improving.",
+    body: "A subscription model providing continuous support, optimization, and governance for your digital ecosystem. Designed for organizations that want their platforms to keep improving after launch.",
   },
+];
+
+export const deliveryModels = [
+  "Fixed-Scope Projects",
+  "Time & Materials",
+  "Retained Partnership",
 ];

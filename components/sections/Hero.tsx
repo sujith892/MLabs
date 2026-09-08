@@ -1,11 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
 import { motion, AnimatePresence, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { hero } from "@/content/hero";
-import { philosophy } from "@/content/philosophy";
 import { useAppReady } from "@/lib/appReady";
 import WordReveal from "@/components/motion/WordReveal";
 import { Button } from "@/components/ui/button";
@@ -106,7 +104,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6, delay: 1.1 }}
-          className="mt-8 max-w-xl font-body text-lg text-ink/60 leading-relaxed"
+          className="mt-10 max-w-xl font-body text-lg text-ink/60 leading-relaxed"
         >
           {hero.subheading}
         </motion.p>
@@ -115,7 +113,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="mt-4 max-w-xl font-body text-base text-ink/45 leading-relaxed"
+          className="mt-6 max-w-xl font-body text-base text-ink/45 leading-relaxed"
         >
           {hero.supportingStatement}
         </motion.p>
@@ -124,7 +122,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ duration: 0.6, delay: 1.35 }}
-          className="mt-10 flex flex-wrap gap-4">
+          className="mt-12 flex flex-wrap gap-4">
         
           <Button
             asChild
@@ -150,26 +148,6 @@ export default function Hero() {
         </div>
 
         <div className="w-full">
-          <div className="relative mb-5 h-32 w-full">
-            <Image
-              src="/logo/Logo+field-png.png"
-              alt="Mfieldlabs"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <motion.aside
-            initial={{ opacity: 0, x: 24 }}
-            animate={ready ? { opacity: 1, x: 0 } : { opacity: 0, x: 24 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="rounded-2xl border border-ink/10 bg-white p-7 text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] md:min-h-[360px] md:p-8"
-          >
-            <p className="eyebrow mb-5 text-deepblue">{philosophy.eyebrow}</p>
-            <h2 className="mb-5 font-display text-2xl font-bold leading-tight md:text-3xl">
-              {philosophy.heading}
-            </h2>
-            <p className="text-base leading-relaxed text-ink/70">{philosophy.body}</p>
-          </motion.aside>
         </div>
       </div>
     </section>

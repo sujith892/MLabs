@@ -57,7 +57,7 @@ export default function ContactSection() {
                 href={PROJECT_INQUIRY_MAILTO}
                 className="group mb-3 flex items-center justify-between gap-4 rounded-xl bg-gradient-to-r from-deepblue to-electric px-5 py-3.5 font-semibold text-white transition-transform hover:scale-[1.02]"
               >
-                Email Mfieldlabs
+                Email MField Labs
                 <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" />
               </a>
             </Magnetic>

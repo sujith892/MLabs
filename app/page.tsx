@@ -4,7 +4,6 @@ import About from "@/components/sections/About";
 import MissionVision from "@/components/sections/MissionVision";
 import EngagementModels from "@/components/sections/EngagementModels";
 import Capabilities from "@/components/sections/Capabilities";
-import CaseStudies from "@/components/sections/CaseStudies";
 import Differentiators from "@/components/sections/Differentiators";
 import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/Footer";
@@ -20,7 +19,6 @@ export default function Home() {
         <MissionVision />
         <Capabilities />
         <EngagementModels />
-        <CaseStudies />
         <Differentiators />
         <ContactSection />
       </main>

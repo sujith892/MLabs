@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import { differentiators, differentiatorsSection } from "@/content/differentiators";
 import WordReveal from "@/components/motion/WordReveal";
 
@@ -24,9 +22,8 @@ export default function Differentiators() {
             <a
               key={item.n}
               href="#contact"
-              className="differentiator-row group flex flex-col gap-4 py-6 transition-colors hover:bg-lightgray/60 sm:flex-row sm:items-center sm:gap-6"
+              className="differentiator-row group flex flex-col gap-4 py-6 pl-4 transition-colors hover:bg-lightgray/60 sm:flex-row sm:items-center sm:gap-6 md:pl-6"
             >
-              <span className="font-mono text-xl text-deepblue/70 md:text-2xl">{item.n}</span>
               <div className="min-w-0 flex-1">
                 <h3 className="mb-1 font-display text-lg font-semibold text-ink md:text-xl">{item.title}</h3>
                 <p className="max-w-2xl text-sm leading-relaxed text-ink/55 md:text-base">{item.body}</p>
@@ -36,16 +33,6 @@ export default function Differentiators() {
                   </div>
                 </div>
               </div>
-              <div className="relative hidden h-16 w-28 shrink-0 overflow-hidden rounded-xl sm:block">
-                <Image
-                  src={item.image}
-                  alt=""
-                  fill
-                  sizes="8rem"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                />
-              </div>
-              <ArrowRight className="h-5 w-5 shrink-0 text-ink/30 transition-transform group-hover:translate-x-1 group-hover:text-deepblue" />
             </a>
           ))}
         </div>

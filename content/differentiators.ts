@@ -7,10 +7,10 @@ export interface Differentiator {
 }
 
 export const differentiatorsSection = {
-  eyebrow: "Why MfieldLabs",
+  eyebrow: "Why MField Labs",
   title: "Engineering the Future of Business.",
   description:
-    "Five commitments define every Mfield engagement — and every one is measured by the business outcome it delivers.",
+    "Five commitments define every MFeld Labs engagement — and every one is measured by the business outcome it delivers.",
 };
 
 export const differentiators: Differentiator[] = [

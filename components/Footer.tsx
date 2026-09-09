@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="relative mb-4 h-20 w-96 max-w-full">
             <Image
               src="/logo/field-logo-png.png"
-              alt="Mfieldlabs"
+              alt="MField Labs"
               fill
               sizes="10rem"
               className="object-contain object-left"
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
           <p className="max-w-xs text-sm leading-relaxed text-white">
             Trusted Intelligence and Digital Evolution Partner. Turning Complexity into Clarity.
-          </p>
+          </p>  
         </div>
         <div>
           <p className="eyebrow mb-4" style={{ color: "#38bdf8" }}>

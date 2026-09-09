@@ -26,7 +26,7 @@ export default function EngagementModels() {
               key={m.title}
               className="flex min-h-[260px] h-full flex-col rounded-xl border border-ink/10 bg-white p-7 shadow-[0_12px_30px_rgba(17,24,39,0.08)]"
             >
-              <h3 className="mb-4 font-display text-base font-semibold text-ink">{m.title}</h3>
+              <h3 className="mb-4 font-display text-base font-semibold text-blue">{m.title}</h3>
               <p className="text-base leading-relaxed text-ink/60">{m.body}</p>
             </div>
           ))}

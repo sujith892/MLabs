@@ -62,7 +62,7 @@ export default function Nav() {
             <Image
               src="/logo/Logo+field-png.png"
 
-              alt="Mfield"
+              alt="MField Labs"
               fill
               className="origin-left scale-110 object-contain object-left"
               priority

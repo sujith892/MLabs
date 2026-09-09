@@ -6,7 +6,7 @@ export interface AboutContent {
 }
 
 export const about: AboutContent = {
-  eyebrow: "About Mfieldlabs",
+  eyebrow: "About MField Labs",
   title: "What We Actually Do",
   problem:
     "Most organizations struggle with fragmented information, manual processes, delayed reporting, and underutilized technology. These bottlenecks make it difficult to scale operations and gain clear visibility into performance. Founders and leaders often have big visions and care deeply about the impact they make, yet they struggle to bring that vision to life and maintain momentum.",

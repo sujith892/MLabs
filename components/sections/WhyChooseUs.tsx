@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
         {/* Left Panel - 52% */}
         <div className="w-full bg-white py-12 md:w-[52%] md:border-r md:border-gray-200">
           <div className="text-xs font-bold text-blue-600 uppercase tracking-[0.18em] mb-4">
-            Why Mfieldlabs
+            Why MField Labs
           </div>
           <h2 className="mb-5 text-left font-display text-4xl font-bold leading-[1.15] text-ink md:text-5xl">
             Why MField Labs Exists

@@ -13,7 +13,6 @@ interface CapabilityModalProps {
   icon: LucideIcon;
   title: string;
   tagline: string;
-  body: string;
   impactAreas: string[];
   outcomes: string[];
   image: string;

@@ -68,7 +68,7 @@ export default function Hero() {
 
         <motion.h1
           style={{ y: titleY, opacity: titleOpacity, scale: titleScale }}
-          className="max-w-4xl font-display text-5xl font-extrabold leading-[1.05] text-ink"
+          className="max-w-4xl font-display text-7xl font-extrabold leading-[1.05] text-ink"
         >
           <WordReveal
             text={hero.headlineLines[0]}
@@ -86,7 +86,7 @@ export default function Hero() {
             delay={0.4}
           />
           <br />
-          <span className="relative mt-2 inline-block max-w-full text-4xl text-deepblue sm:text-5xl md:whitespace-nowrap md:text-7xl">
+          <span className="relative mt-2 inline-block max-w-full text-6xl text-deepblue sm:text-5xl md:whitespace-nowrap md:text-7xl">
             <WordReveal
               text={hero.headlineLines[2]}
               className="inline max-w-full"

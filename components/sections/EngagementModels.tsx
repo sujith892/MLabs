@@ -12,7 +12,7 @@ export default function EngagementModels() {
       <div className="container">
         <div className="mb-10 max-w-2xl">
           <p className="eyebrow mb-5 text-base">{engagementModelsSection.eyebrow}</p>
-          <h2 className="mb-4 whitespace-nowrap font-display text-4xl font-bold leading-[1.05] text-ink md:text-5xl">
+          <h2 className="mb-4 font-display text-4xl font-bold leading-[1.05] text-ink md:text-5xl">
             <WordReveal text={engagementModelsSection.title} />
           </h2>
           <p className="text-base leading-relaxed text-ink/60">{engagementModelsSection.description}</p>

@@ -28,9 +28,12 @@ export const capabilities: Capability[] = [
       "Turning scattered reporting and spreadsheets into a single, trusted view of the business.",
     body: "Reports that take days to prepare, different departments working from different numbers, heavy reliance on spreadsheets, leadership without real-time visibility.",
     impactAreas: [
-      "Dashboards that show you what's happening, in real time",
-      "One set of numbers your whole team trusts",
-      "Reports that used to take you days, done automatically",
+      "Executive dashboards",
+      "Operational reporting modernization",
+      "KPI tracking environments",
+      "Data integration across existing systems",
+      "Data quality and governance",
+      "Business performance visibility",
     ],
     outcomes: [
       "Trusted enterprise-wide information",
@@ -49,9 +52,11 @@ export const capabilities: Capability[] = [
     tagline: "Designing Intelligent Operations That Scale Efficiently.",
     body: "Someone spending all day moving data between systems, heavy reliance on email approvals, a process that breaks when one person is out, the same information entered more than once.",
     impactAreas: [
-      "Cutting out the repetitive manual work slowing your team down",
-      "Connecting your systems so information moves on its own",
-      "Faster approvals, fewer bottlenecks for your team",
+      "Employee and customer onboarding automation",
+      "Invoice and claims processing automation",
+      "Approval workflow systems",
+      "Cross-system integrations",
+      "Notification and alert systems",
     ],
     outcomes: [
       "Reduced manual effort",
@@ -67,12 +72,15 @@ export const capabilities: Capability[] = [
     n: "03",
     icon: "layout",
     title: "Digital Experiences & Software Engineering",
-    tagline: "Creating Connected Experiences for Employees, Customers, and Stakeholders.",
+    tagline:
+      "Creating Connected Experiences for Employees, Customers, and Stakeholders.",
     body: "Systems that don't talk to each other, workarounds instead of real fixes, software the business has outgrown, customers calling in for things that could be self-service.",
     impactAreas: [
-      "Tools built around how your team actually works",
-      "Portals for your customers, employees, or partners",
-      "Fixing the systems that have become outdated or hard for your team to use",
+      "Custom business applications",
+      "Customer, vendor, and partner portals",
+      "Case and request management platforms",
+      "API, CRM, and ERP integrations",
+      "Legacy system modernization",
     ],
     outcomes: [
       "Enhanced customer loyalty",
@@ -88,12 +96,15 @@ export const capabilities: Capability[] = [
     n: "04",
     icon: "sparkles",
     title: "AI & Microsoft Innovation",
-    tagline: "Accelerating Transformation Through Microsoft Technologies and Responsible AI.",
+    tagline:
+      "Accelerating Transformation Through Microsoft Technologies and Responsible AI.",
     body: "Leadership asking about AI, evaluating Copilot, spending too much time producing reports, concerns about AI governance and security.",
     impactAreas: [
-      "Practical AI, not hype",
-      "Your Microsoft 365 and Copilot, set up properly",
-      "Recommended only when it solves a real problem for your business, not by default",
+      "AI opportunity discovery and readiness assessments",
+      "Microsoft Copilot rollout and adoption programs",
+      "Microsoft 365 optimization and governance",
+      "Internal AI assistants and knowledge tools",
+      "Intelligent document processing",
     ],
     outcomes: [
       "Accelerated digital transformation",

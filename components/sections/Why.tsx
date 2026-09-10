@@ -8,15 +8,14 @@ export default function Why() {
     <section id="why" className="min-h-screen bg-white px-6 pb-28 pt-16 md:px-16 md:pt-20">
       <div className="container">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow mb-8">{why.eyebrow}</p>
+          
+            <p className="eyebrow mb-5 text-base">{why.eyebrow}</p>
             <h2 className="mb-7 max-w-md border-l-2 border-deepblue pl-5 font-display text-3xl font-bold leading-[1.2] text-ink md:text-4xl">
               {why.heading}
             </h2>
             <p className="text-base text-gray-700 leading-relaxed mb-6">
               {why.description}
             </p>
-          </div>
           
           <div className="flex flex-col gap-8">
             <div>

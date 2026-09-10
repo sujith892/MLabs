@@ -45,9 +45,8 @@ export default function MissionVision() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-15%" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="h-full rounded-2xl border p-10 transition-colors"
+            className="h-full rounded-2xl border border-ink/10 p-10 shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow"
             style={{
-              borderColor: "color-mix(in srgb, #0a66ff calc(var(--fill, 1) * 100%), rgba(17,24,39,0.08))",
               backgroundColor: "color-mix(in srgb, #0a66ff calc(var(--fill, 1) * 4%), transparent)",
             }}
           >
@@ -71,19 +70,15 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-15%" }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="h-full rounded-2xl bg-[linear-gradient(135deg,#081326_0%,#10264a_55%,#1b3d68_100%)] p-10 text-center text-white flex flex-col items-center justify-center transition-colors"
-          style={{
-            boxShadow:
-              "inset 0 0 0 1px color-mix(in srgb, #38bdf8 calc(var(--fill, 1) * 60%), rgba(255,255,255,0.08))",
-          }}
+          className="h-full rounded-2xl border border-ink/10 bg-[color-mix(in_srgb,#0a66ff_4%,transparent)] p-10 text-center text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow flex flex-col items-center justify-center"
         >
           <p className="eyebrow mb-5" style={{ color: "#38bdf8" }}>
             {philosophy.eyebrow}
           </p>
-          <h2 className="max-w-xl font-display font-bold text-3xl leading-[1.15] mb-6">
+          <h2 className="max-w-xl font-display font-bold text-3xl leading-[1.15] mb-6 text-ink">
             <WordReveal text={philosophy.heading} />
           </h2>
-          <p className="max-w-xl text-white/65 leading-relaxed">{philosophy.body}</p>
+          <p className="max-w-xl text-ink/60 leading-relaxed">{philosophy.body}</p>
           </motion.div>
         </div>
       </div>

@@ -7,11 +7,11 @@ export default function Differentiators() {
   return (
     <section id="why-choose-us" className="scroll-mt-28 bg-white px-6 py-20 text-ink md:px-16">
       <div className="container">
-        <p className="eyebrow mb-5" style={{ color: "#38bdf8" }}>
+        <p className="eyebrow mb-5">
           {differentiatorsSection.eyebrow}
         </p>
         <div className="mb-12 max-w-3xl">
-          <h2 className="mb-5 whitespace-nowrap font-display text-4xl font-bold leading-[1.1] md:text-5xl">
+          <h2 className="mb-5 font-display text-4xl font-bold leading-[1.1] md:text-5xl">
             <WordReveal text={differentiatorsSection.title} />
           </h2>
           <p className="text-lg leading-relaxed text-ink/65">{differentiatorsSection.description}</p>

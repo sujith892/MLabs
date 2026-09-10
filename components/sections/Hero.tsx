@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { motion, AnimatePresence, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { hero } from "@/content/hero";
@@ -50,7 +51,7 @@ export default function Hero() {
     <section
       id="top"
       ref={heroRef}
-      className="relative flex flex-col justify-center overflow-hidden bg-white px-6 pb-20 pt-40 md:px-16 md:pb-28"
+      className="relative flex flex-col justify-center overflow-hidden bg-white px-6 pb-32 pt-40 md:px-16 md:pb-40"
     >
       <div className="container relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16">
         <div>
@@ -147,7 +148,14 @@ export default function Hero() {
         </motion.div>
         </div>
 
-        <div className="w-full">
+        <div className="flex w-full items-center justify-center pt-10 md:pt-20">
+          <Image
+            src="/logo/Logo+field-png.png"
+            alt="MField Labs"
+            width={620}
+            height={265}
+            className="h-auto w-full max-w-[320px] object-contain md:max-w-[620px]"
+          />
         </div>
       </div>
     </section>

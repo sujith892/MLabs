@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Database, Workflow, LayoutPanelLeft, Sparkles } from "lucide-react";
 import { capabilities, capabilitiesSection, type CapabilityIcon } from "@/content/capabilities";
 import CapabilityModal from "@/components/ui/CapabilityModal";
+import WordReveal from "@/components/motion/WordReveal";
 
 const ICONS: Record<CapabilityIcon, typeof Database> = {
   database: Database,
@@ -21,25 +22,21 @@ export default function Capabilities() {
   return (
     <section
       id="services"
-      className="scroll-mt-28 overflow-hidden bg-white px-6 py-20 pb-28 md:px-16 xl:py-8 xl:pb-16"
+      className="scroll-mt-28 overflow-hidden bg-white px-6 pb-24 pt-28 md:px-16 xl:pb-12 xl:pt-16"
     >
       <div className="container">
         <div className="mb-10 max-w-2xl xl:mb-6">
           <p className="eyebrow mb-5">{capabilitiesSection.eyebrow}</p>
-          <h2 className="max-w-4xl whitespace-nowrap font-display text-4xl font-bold leading-[1.05] text-ink md:text-5xl">
-            {capabilitiesSection.heading}
+          <h2 className="mb-4 font-display text-4xl font-bold leading-[1.05] text-ink md:text-5xl">
+            <WordReveal text={capabilitiesSection.heading} />
           </h2>
-          <p className="mt-5 max-w-4xl text-base leading-relaxed text-ink/65 md:text-lg">
+          <p className="text-base leading-relaxed text-ink/60">
             {capabilitiesSection.description}
           </p>
         </div>
       </div>
 
-      <div className="container mb-6 xl:mb-3">
-        <div className="h-px w-full bg-sky" />
-      </div>
-
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-6 pt-2 xl:justify-center xl:gap-4 xl:overflow-visible xl:pb-2 xl:pt-0 xl:snap-none">
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-6 pt-2 xl:justify-center xl:gap-4 xl:overflow-visible xl:px-0 xl:pb-2 xl:pt-0 xl:snap-none">
         {capabilities.map((c, i) => {
           const Icon = ICONS[c.icon];
           return (
@@ -49,11 +46,11 @@ export default function Capabilities() {
                 onClick={() => setOpenIndex(i)}
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="group flex h-[300px] w-[280px] flex-col rounded-[20px] border border-ink/10 bg-white p-6 text-left text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow duration-300 hover:shadow-[0_28px_70px_rgba(10,102,255,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky md:w-[300px] xl:h-[260px] xl:w-[320px] xl:p-5"
+                className="group flex min-h-[380px] w-[280px] flex-col rounded-[20px] border border-ink/10 bg-white p-6 text-left text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow duration-300 hover:shadow-[0_28px_70px_rgba(10,102,255,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky md:w-[300px] xl:min-h-[340px] xl:w-[320px] xl:p-5"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-display text-xl font-bold leading-tight xl:text-lg">{c.title}</h3>
+                    <h3 className="font-display text-2xl font-bold leading-tight xl:text-xl">{c.title}</h3>
                   </div>
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-deepblue/15 bg-deepblue/5 text-deepblue">
                     <Icon className="h-4 w-4" aria-hidden="true" />
@@ -61,9 +58,9 @@ export default function Capabilities() {
                 </div>
 
                 <div className="mt-5 border-t border-ink/10 pt-5">
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {c.impactAreas.map((area) => (
-                      <li key={area} className="flex items-start gap-2 text-[11px] leading-snug text-ink/70">
+                      <li key={area} className="flex items-start gap-2 text-sm leading-snug text-ink/70">
                         <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-sky" aria-hidden="true" />
                         {area}
                       </li>

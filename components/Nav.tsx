@@ -31,7 +31,7 @@ export default function Nav() {
     window.history.pushState({}, "", href);
     requestAnimationFrame(() => {
       const headerHeight = navBarRef.current?.getBoundingClientRect().height ?? 0;
-      const targetTop = Math.max(0, target.getBoundingClientRect().top + window.scrollY - headerHeight - 16);
+      const targetTop = Math.max(0, target.getBoundingClientRect().top + window.scrollY - headerHeight);
 
       window.scrollTo({ top: targetTop, behavior: "auto" });
     });
@@ -60,7 +60,7 @@ export default function Nav() {
             className="relative ml-0 h-16 w-36 shrink-0 md:ml-5 md:h-14 md:w-48"
           >
             <Image
-              src="/logo/Logo+field-png.png"
+              src="/logo/mfield-logo-png.png"
 
               alt="MField Labs"
               fill

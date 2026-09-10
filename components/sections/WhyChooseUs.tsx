@@ -16,10 +16,10 @@ export default function WhyChooseUs() {
       <main className="container flex flex-col md:flex-row">
         {/* Left Panel - 52% */}
         <div className="w-full bg-white py-12 md:w-[52%] md:border-r md:border-gray-200">
-          <div className="text-xs font-bold text-blue-600 uppercase tracking-[0.18em] mb-4">
+          <div className="eyebrow mb-4 text-base">
             Why MField Labs
           </div>
-          <h2 className="mb-5 text-left font-display text-4xl font-bold leading-[1.15] text-ink md:text-5xl">
+          <h2 className="mb-5 text-left font-display text-4xl font-bold leading-[1.15] text-blue-600 md:text-5xl">
             Why MField Labs Exists
           </h2>
 
@@ -45,38 +45,38 @@ export default function WhyChooseUs() {
         {/* Right Panel - 48% */}
         <div className="w-full bg-white pt-6 pb-12 md:w-[48%] md:pl-12">
           {/* A Different Model, By Design Card */}
-          <div className="bg-white border border-gray-200 rounded-lg p-4 mb-4 shadow-[0_8px_24px_rgba(17,24,39,0.08)]">
-            <div className="text-sm font-bold text-gray-600 uppercase tracking-wider mb-1">
+          <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 shadow-[0_8px_24px_rgba(17,24,39,0.08)]">
+            <div className="text-base font-bold text-gray-600 uppercase tracking-wider mb-2">
               A DIFFERENT MODEL, BY DESIGN
             </div>
             <p className="text-base text-gray-600 mb-4">
               We&apos;re not a smaller version of a big consulting firm, and we&apos;re not a cheaper alternative to one either.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               {/* Traditional Big Consulting */}
               <div>
-                <h4 className="text-sm font-bold text-gray-600 uppercase mb-2">
+                <h4 className="text-base font-bold text-gray-600 uppercase mb-2">
                   Traditional Big Consulting
                 </h4>
                 <div className="space-y-2">
-                  <div className="text-sm text-gray-600 opacity-65 !no-underline">Large teams</div>
-                  <div className="text-sm text-gray-600 opacity-65 !no-underline">High overhead</div>
-                  <div className="text-sm text-gray-600 opacity-65 !no-underline">Long, broad engagements</div>
-                  <div className="text-sm text-gray-600 opacity-65 !no-underline">Transformation programs that touch everything</div>
+                  <div className="text-base text-gray-600 opacity-65 !no-underline">Large teams</div>
+                  <div className="text-base text-gray-600 opacity-65 !no-underline">High overhead</div>
+                  <div className="text-base text-gray-600 opacity-65 !no-underline">Long, broad engagements</div>
+                  <div className="text-base text-gray-600 opacity-65 !no-underline">Transformation programs that touch everything</div>
                 </div>
               </div>
 
               {/* MField Labs */}
               <div>
-                <h4 className="text-sm font-bold text-gray-600 uppercase mb-2 pb-1.5 border-b border-gray-200">
+                <h4 className="text-base font-bold text-gray-600 uppercase mb-2 pb-1.5 border-b border-gray-200">
                   MField Labs
                 </h4>
                 <div className="space-y-2">
-                  <div className="text-sm text-blue-600 font-semibold">✓ Focused team, senior-led</div>
-                  <div className="text-sm text-blue-600 font-semibold">✓ Efficient global delivery</div>
-                  <div className="text-sm text-blue-600 font-semibold">✓ Start with a sprint, prove value fast</div>
-                  <div className="text-sm text-blue-600 font-semibold">✓ Solve the highest-value problem first</div>
+                  <div className="text-base text-blue-600 font-semibold">✓ Focused team, senior-led</div>
+                  <div className="text-base text-blue-600 font-semibold">✓ Efficient global delivery</div>
+                  <div className="text-base text-blue-600 font-semibold">✓ Start with a sprint, prove value fast</div>
+                  <div className="text-base text-blue-600 font-semibold">✓ Solve the highest-value problem first</div>
                 </div>
               </div>
             </div>

@@ -134,7 +134,7 @@ export default function WhyChooseUs() {
               <div className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-3">
                 
               </div>
-              <div className="space-y-2.5 text-base text-gray-600 leading-relaxed"><br></br>
+              <div className="space-y-2.5 text-xl text-gray-600 leading-relaxed"><br></br>
                 <p>
                   You can already hire an AI developer, a Power BI analyst, or an automation specialist online. Good talent 
                   isn&apos;t hard to find anymore.

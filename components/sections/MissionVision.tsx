@@ -35,7 +35,7 @@ export default function MissionVision() {
   );
 
   return (
-    <section id="mission" ref={sectionRef} className="bg-white px-6 py-28 md:px-16">
+    <section id="mission" ref={sectionRef} className="bg-white px-6 pb-44 pt-28 md:px-16">
       <div className="container">
         <p className="eyebrow mb-5">{mission.eyebrow}</p>
         <div className="grid items-stretch gap-16 lg:grid-cols-2">
@@ -45,10 +45,7 @@ export default function MissionVision() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-15%" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="h-full rounded-2xl border border-ink/10 p-10 shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow"
-            style={{
-              backgroundColor: "color-mix(in srgb, #0a66ff calc(var(--fill, 1) * 4%), transparent)",
-            }}
+            className="h-full rounded-2xl border border-ink/10 bg-white p-10 shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow"
           >
             <h2 className="font-display font-bold text-3xl md:text-4xl leading-[1.1] text-ink mb-6">
               <WordReveal text={mission.heading} />
@@ -70,12 +67,12 @@ export default function MissionVision() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-15%" }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="h-full rounded-2xl border border-ink/10 bg-[color-mix(in_srgb,#0a66ff_4%,transparent)] p-10 text-center text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow flex flex-col items-center justify-center"
+          className="h-full rounded-2xl border border-ink/10 bg-white p-10 text-center text-ink shadow-[0_18px_50px_rgba(17,24,39,0.08)] transition-shadow flex flex-col items-center justify-center"
         >
-          <p className="eyebrow mb-5" style={{ color: "#38bdf8" }}>
+          <p className="eyebrow mb-5" style={{ color: "#0A66FF" }}>
             {philosophy.eyebrow}
           </p>
-          <h2 className="max-w-xl font-display font-bold text-3xl leading-[1.15] mb-6 text-ink">
+          <h2 className="max-w-xl font-display font-bold text-4xl leading-[1.15] mb-6 text-ink">
             <WordReveal text={philosophy.heading} />
           </h2>
           <p className="max-w-xl text-ink/60 leading-relaxed">{philosophy.body}</p>

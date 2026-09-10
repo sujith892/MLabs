@@ -51,7 +51,7 @@ export default function Hero() {
     <section
       id="top"
       ref={heroRef}
-      className="relative flex flex-col justify-center overflow-hidden bg-white px-6 pb-32 pt-40 md:px-16 md:pb-40"
+      className="relative flex flex-col justify-center overflow-hidden bg-white px-6 pb-40 pt-40 md:px-16 md:pb-48"
     >
       <div className="container relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-start md:gap-16">
         <div>

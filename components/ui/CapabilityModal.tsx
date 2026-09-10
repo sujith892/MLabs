@@ -13,6 +13,7 @@ interface CapabilityModalProps {
   icon: LucideIcon;
   title: string;
   tagline: string;
+  body: string;
   impactAreas: string[];
   outcomes: string[];
   image: string;
@@ -29,7 +30,6 @@ export default function CapabilityModal({
   icon: Icon,
   title,
   tagline,
-  body,
   impactAreas,
   outcomes,
   image,
